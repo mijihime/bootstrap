@@ -1,0 +1,93 @@
+<title></title>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device=width, initial-scale=1'>
+<script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>
+<link rel='stylesheet'href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'/>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css'/>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css'/>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Material+Icons'/>
+<style>
+    
+</style>
+<body>
+<div class='container-fluid'>
+    <div class='row'>
+        <div class='col bg-secondary p-2 rounded text-center'>
+            <h2>HR</h2>
+        </div>
+    </div>
+    <div class='row ml-1'>
+        <form class='form-row align-content-center mt-3 w-100'>
+            <div class='col-2 mt-2'>
+                <input type='text' class='form-control' placeholder='노동자명'/>
+            </div>
+            <div class='col-4 mt-2'>
+                <input type='text' class='form-control' placeholder='입사일'/>
+            </div>
+            <div class='d-flex col-6 mt-2'>
+                <button type='button' class='m-1 bi bi-plus-square btn btn-success btn-block'><span class='d-none d-md-inline'> 추가</span></button>       
+                <button type='button' class='m-1 bi bi-pencil-square btn btn-primary btn-block'><span class='d-none d-md-inline'> 수정</span></button>   
+                <button type='button' class='m-1 bi bi-trash-fill btn btn-warning btn-block' data-toggle='modal'
+                    data-target='#delModal'><span class='d-none d-md-inline'> 삭제</span></button>
+            </div> 
+        </form>
+    </div>
+    <div class='row mt-3'>
+        <div class='col'>
+            <table class='table'>
+                <form class='form-row align-item-center'>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>ID</th>
+                        <th>이름</th>
+                        <th>입사일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>
+                            <div class='form-check form-check-inline'>
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                            </div>
+                        </th>
+                        <td>12</td>
+                        <td>최한석</td>
+                        <td>2025-05-15</td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <div class='form-check form-check-inline'>
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                            </div>
+                        </th>
+                        <td>13</td>
+                        <td>한아름</td>
+                        <td>2027-07-17</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+<div class='modal fade' id='delModal' tabindex='-1'>
+    <div class='modal-dialog'>
+        <div class='modal-content'>
+            <div class='modal-header'>
+                <button type='button' class='close' data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class='modal-body'>
+                <p>노동자를 삭제하시겠습니까?</p>
+            </div>
+            <div class='modal-footer'>
+                <button type='button' class='btn btn-dark' data-dismiss="modal">
+                    아니오
+                </button>
+                <a href='#' class='btn btn-primary'>예</a>
+            </div>
+        </div>
+    </div>
+</body>
